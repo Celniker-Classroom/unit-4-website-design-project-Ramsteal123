@@ -1,1 +1,10 @@
 /* Add Global styles here */
+
+body {
+    background-color: black;
+    color: gold;
+}
+
+h1 {
+    color: gold;
+}
