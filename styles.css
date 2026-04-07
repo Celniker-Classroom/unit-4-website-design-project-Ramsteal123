@@ -2,10 +2,33 @@
 
 body {
     background-color: black;
-    color: gold;
+    color: goldenrod;
 }
 
 h1 {
-    color: gold;
+    color: goldenrod;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+}
+.navbar a {
+    color: goldenrod;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: hsl(0, 0%, 10%);
+}
