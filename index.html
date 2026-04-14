@@ -34,6 +34,8 @@
 <center><h2>I will also be going over the different types of features in each game and the history of the series.</h2></center>
 <center><img src="/image/Capture2.PNG" alt="Monster Hunter Stories 3" style="width: 1330px; height: 70px;" sizes="100" srcset=""></center>
 
+<center><button onclick="myFunction()">Toggle dark mode</button></center>
+
 <center><h3>List Of All Monster Hunter Games</h3></center>
 
 <center><table style="width: 50%; border: 1px solid gold; border-collapse: collapse;">
@@ -76,46 +78,15 @@
 <img src="/image/Capture2.PNG" alt="Monster Hunter Stories 3" style="width: 1330px; height: 70px;" sizes="100" srcset="">
 
 <meta src="https://www.monsterhunter.com/wilds/assets/img/product/MHWilds_deluxe.png" name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.button {
-  position: relative;
-  border: none;
-  font-size: 28px;
-  padding: 20px;
-  width: 1000px;
-  text-align: center;
-  -webkit-transition-duration: 2s; /* Safari */
-  transition-duration: 2s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 }
-
-.button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px!important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 2s
-}
-
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-</style>
-</head>
-<body>
-
-<h2>Animated Button - Ripple Effect</h2>
-
-<button class="button"><img src="https://www.monsterhunter.com/wilds/assets/img/product/MHWilds_deluxe.png" alt=""></button>
+</script>
 
 </body>
 </html>
