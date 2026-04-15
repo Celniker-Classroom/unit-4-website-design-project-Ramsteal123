@@ -28,18 +28,105 @@ function myFunction() {
 <body>
     <h1></h1>
 
-<center><img src="128" alt="128" sizes="128" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB07R2wvhF8ZHBb3SvWnX80-RElO8zkiOzhw&s">
+<center><img style="width: 700px; height: 400px;" src="128" alt="128" sizes="200" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB07R2wvhF8ZHBb3SvWnX80-RElO8zkiOzhw&s">
 </body></center>
 
 </html>
 
 <center><h1>Introduction</h1></center>
+
+
+
+<center><div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="https://www.gamegrin.com/assets/Uploads/2020/07/30/_resampled/resizedimage640360-monster-hunter-world-iceborne-lances.jpg" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="https://i.ytimg.com/vi/9cd2dIa1DKk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAkLekpdt1lkB7fRa9CzJiuenOnCQ" width="300" height="200">
+  </div>
+</div>
+
+
+
 <center><img src="/image/Capture2.PNG" alt="Monster Hunter Stories 3" style="width: 1330px; height: 70px;" sizes="100" srcset=""></center>
 <center><h2>In this website, I will explain the most popular monsters in the Monster Hunter series and their roles in the games.</h2></center>
 <center><h2>I will also be going over the different types of features in each game and the history of the series.</h2></center>
 <center><img src="/image/Capture2.PNG" alt="Monster Hunter Stories 3" style="width: 1330px; height: 70px;" sizes="100" srcset=""></center>
 
-<center><button onclick="myFunction()">Toggle dark mode</button></center>
+<center><h2>Popular Weapons</h2></center>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="128" alt="128" sizes="128" srcset="https://external-preview.redd.it/mh-wilds-lance-thoughts-v0-5NBeF9LCyN69Kv0aZ3orm_UlQLhjFggWHl9AzKxw3JU.jpg?auto=webp&s=eb26787390dde1ea508c7e1815ff65e4880d4e6d" style="width:100%">
+    <div class="text">Defender Weapon</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img srcset="https://i.ytimg.com/vi/ZcjGwUo8vjE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCVBkzll66lXSB6OjWSZ_NOurcBKA" style="width:100%">
+    <div class="text">Long Range Weapon</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img srcset="https://i.ytimg.com/vi/toi52e8Lf0U/maxresdefault.jpg" style="width:100%">
+    <div class="text">Close Combat Weapon</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
 
 <center><h3>List Of All Monster Hunter Games</h3></center>
 
@@ -77,13 +164,13 @@ function myFunction() {
 
 
 
-
+<center><button onclick="myFunction()">Toggle dark mode</button></center>
 </tr>
 </table>
 <img src="/image/Capture2.PNG" alt="Monster Hunter Stories 3" style="width: 1330px; height: 70px;" sizes="100" srcset="">
 
-<img src="https://www.monsterhunter.com/wilds/assets/img/product/MHWilds_deluxe.png" alt="Monster Hunter Wilds" a style="width: 1000px; height: 700px;" sizes="100" srcset="">
 
+<center><a href="https://bookish-broccoli-jj64vrxvg45q3jjvx-3000.app.github.dev/subpage.html?serverWindowId=43bc2cab-82df-4382-8b09-7a5f5c682fd0"><img src="https://www.monsterhunter.com/wilds/assets/img/product/MHWilds_deluxe.png" alt="https://bookish-broccoli-jj64vrxvg45q3jjvx-3000.app.github.dev/subpage.html?serverWindowId=557e69f6-94cd-410d-b42b-ff11cfbf6c72" style="width: 1200px;px;height: 600px;px;"></a></center>
 
 
 
